@@ -1,38 +1,57 @@
+Table,
+td,
+th {
+    border: 1px solid lightgray;
+}
+Table {
+    width: 90%;
+}
 .table {
-  .cellWrapper {
-    display: flex;
-    align-items: center;
-  }
+    margin-top: 50px;
+    margin-left: 20px;
+    border-collapse: collapse;
 }
-
-.status {
-  margin: 5px;
-  border-radius: 5px;
+th {
+    height: 70px;
+    background-color: #32A4C1 !important;
+    color: white !important;
+    font-size: 16px !important;
+    }
+td {
+    height: 50px;
+    text-align: center;
 }
-.Booked {
-  color: green;
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.checkout {
+  background-color: #D3D0F2;
+    padding:6px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    color: green;
+}
+.checkin {
+  background-color: #39D139;
+    padding:6px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    color: green;
+}
+.booked {
   background-color: #f69685;
   padding:6px;
-  font-weight: bold;
-}
-.Checkout {
-  background-color: #D3D0F2;
+  border-radius: 5px;
+  margin: 5px;
+  border-radius: 5px;
   color: green;
-  border-radius: 10%;
-  padding:6px;
-}
-.Checkin {
-  background-color: #39D139;
-  color: green;
-  border-radius: 10%;
-  padding:6px;
-}
-thead,th {
-  background-color: #32A4C1 !important;
-  color: white !important;
-  font-size: 16px !important;
 }
 .number {
   font-weight: bold;
   color: blue;
 }
+
