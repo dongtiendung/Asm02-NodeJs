@@ -48,7 +48,7 @@ const Reserve = ({ hotelId, cheapestPrice }) => {
 
         setSelectRooms(checked ? [...selectRooms, value] : selectRooms.filter((item) => item !== value));
     };
-    // console.log(selectRooms);
+    console.log(selectRooms);
 
     //Tính số ngày đặt phòng
     const MILISECONDS_PER_DAY = 1000 * 60 * 60 * 24;
@@ -88,7 +88,7 @@ const Reserve = ({ hotelId, cheapestPrice }) => {
                 payment: payment,
                 status: 'Booked',
             });
-            // console.log(res.data);
+            console.log(res.data);
         } catch (error) {
             console.log(error);
         }
@@ -198,7 +198,7 @@ const Reserve = ({ hotelId, cheapestPrice }) => {
                     <div className="book">
                         <FormGroup>
                             <Input onChange={handlePay} id="payment" name="payment" type="select" className="select" required>
-                                <option>Select Payment Method </option>
+                                <option>Choose Payment Method</option>
                                 <option>Cash</option>
                                 <option>Credit Card</option>
                             </Input>

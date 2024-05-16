@@ -33,6 +33,7 @@ function Login() {
             <Navbar />
             <div className="login">
                 <div className="lContainer">
+                <div className='titleLogin'><h2> Login</h2></div>
                     <input type="text" placeholder="username" id="username" onChange={handleChange} className="lInput" />
                     <input type="password" placeholder="password" id="password" onChange={handleChange} className="lInput" />
                     <button className="lButton" onClick={handleClick} disabled={isLoading}>

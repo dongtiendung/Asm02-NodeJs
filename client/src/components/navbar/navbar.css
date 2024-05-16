@@ -22,14 +22,17 @@
 .logo {
     font-weight: 500;
     color: #fff;
+    text-decoration: none;
 }
-a {
-    text-decoration: none ;
-}
+
 .navButton {
     margin-left: 20px;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
     color: #003580;
+}
+
+a {
+    text-decoration: none ;
 }

@@ -35,7 +35,6 @@ function Register() {
             });
             console.log(res);
             // dispatch({ type: 'LOGIN_SUCCESS', payload: res.data });
-            alert("Register successfull!")
             navigate('/login');
         } catch (error) {
             setError(error.response.data);
@@ -44,8 +43,10 @@ function Register() {
     return (
         <>
             <Navbar />
+            
             <div className="login">
                 <div className="lContainer">
+                <div className='titleRegister'><h2> Sign Up</h2></div>
                     <input type="text" placeholder="username" id="username" onChange={handleChange} className="lInput" required />
                     <input
                         type="password"
