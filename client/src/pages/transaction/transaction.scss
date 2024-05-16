@@ -1,0 +1,38 @@
+.table {
+  .cellWrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.status {
+  margin: 5px;
+  border-radius: 5px;
+}
+.Booked {
+  color: green;
+  background-color: #f69685;
+  padding:6px;
+  font-weight: bold;
+}
+.Checkout {
+  background-color: #D3D0F2;
+  color: green;
+  border-radius: 10%;
+  padding:6px;
+}
+.Checkin {
+  background-color: #39D139;
+  color: green;
+  border-radius: 10%;
+  padding:6px;
+}
+thead,th {
+  background-color: #32A4C1 !important;
+  color: white !important;
+  font-size: 16px !important;
+}
+.number {
+  font-weight: bold;
+  color: blue;
+}
