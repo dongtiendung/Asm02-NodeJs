@@ -1,6 +1,3 @@
-# Asm02-NodeJs
-Asm02-NodeJs
-
 Cmd to Run Application 
 
 $$$$$$$$$$$$$$$$$$
@@ -19,9 +16,8 @@ $$$$$$$$$$
 > cd admin
 > npm install
 > npm start
->
-> $$$$$$$$$$
+
+$$$$$$$$$$
 admin info
 ID user01
 PW 12345
-
