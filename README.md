@@ -19,3 +19,9 @@ $$$$$$$$$$
 > cd admin
 > npm install
 > npm start
+>
+> $$$$$$$$$$
+admin info
+ID user01
+PW 12345
+
