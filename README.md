@@ -1,6 +1,6 @@
 Cmd to Run Application 
 
-$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$
 > cd server
 > npm install
 > npm start
