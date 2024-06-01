@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+const { Schema } = mongoose; // Lấy Schema từ mongoose
 
 const TransactionSchema = new mongoose.Schema({
     user: {
@@ -9,6 +10,10 @@ const TransactionSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    hotelId:   { 
+        type: String,
+        required: true,
+        },
     room: {
         type: [Number],
         required: true,

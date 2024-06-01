@@ -48,6 +48,7 @@ export const getTransactionByUserId = async (req, res, next) => {
     }
 };
 
+
 export const createTransaction = async (req, res, next) => {
     try {
         const newTrans = new Transaction(req.body);

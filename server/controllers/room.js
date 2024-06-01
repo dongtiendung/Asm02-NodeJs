@@ -52,21 +52,6 @@ export const updateRoom = async (req, res, next) => {
     }
 };
 
-// export const deleteRoom = async (req, res, next) => {
-//     const hotelId = req.params.hotelId;
-//     try {
-//         await Room.findByIdAndDelete(req.params.id);
-//         try {
-//             await Hotel.findByIdAndUpdate(hotelId, { $pull: { rooms: req.params.id } });
-//         } catch (error) {
-//             next(error);
-//         }
-//         res.status(200).json('Room has been deleted !');
-//     } catch (error) {
-//         next(error);
-//     }
-// };
-
 export const deleteRoom = async (req, res, next) => {
     const roomId = req.params.id;
     try {
@@ -78,13 +63,11 @@ export const deleteRoom = async (req, res, next) => {
         }
 
         // Tìm khách sạn dựa trên ID của phòng tìm thấy
-        const hotel = await Hotel.findOneAndUpdate({ rooms: room._id }, { $pull: { rooms: room._id } }, { new: true });
+        const hotel = await Hotel.findOneAndUpdate({ rooms: roomId }, { $pull: { rooms: roomId } }, { new: true });
 
         if (!hotel) {
             return res.status(404).json({ success: false, message: 'Hotel not found.' });
         }
-        // res.json({ success: true, message: 'Room has been deleted successfully.' });
-
         // Xóa phòng
         const deletedRoom = await Room.findByIdAndDelete(room._id);
 
