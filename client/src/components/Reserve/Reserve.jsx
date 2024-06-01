@@ -81,6 +81,7 @@ const Reserve = ({ hotelId, cheapestPrice }) => {
             const res = await axios.post('http://localhost:5000/api/transaction', {
                 user: user._id,
                 hotel: hotel.title,
+                hotelId: hotel._id,
                 room: selectRooms,
                 startDate: start,
                 endDate: end,
