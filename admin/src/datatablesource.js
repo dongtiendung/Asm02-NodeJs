@@ -93,14 +93,6 @@ export const roomColumns = [
         headerName: 'Max People',
         width: 100,
     },
-    // {
-    //     field: 'room',
-    //     headerName: 'Room',
-    //     width: 100,
-    //     renderCell: (params) => {
-    //         return <div className="cellWithImg">{`${params.row.roomNumbers}`}</div>;
-    //     },
-    // },
 ];
 export const transactionColumns = [
     {
@@ -147,24 +139,15 @@ export const transactionColumns = [
         field: 'price',
         headerName: 'Price',
         width: 70,
-        // renderCell: (params) => {
-        //     return <div className="cellWithImg">{`${params.row.roomNumbers}`}</div>;
-        // },
     },
     {
         field: 'payment',
         headerName: 'Payment Method',
         width: 100,
-        // renderCell: (params) => {
-        //     return <div className="cellWithImg">{`${params.row.roomNumbers}`}</div>;
-        // },
     },
     {
         field: 'status',
         headerName: 'Status',
         width: 100,
-        // renderCell: (params) => {
-        //     return <div className="cellWithImg">{`${params.row.roomNumbers}`}</div>;
-        // },
     },
 ];

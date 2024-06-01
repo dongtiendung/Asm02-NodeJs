@@ -7,9 +7,9 @@ import { useEffect, useState } from 'react';
 import useFetch from '../../hooks/useFetch';
 
 const DatatableTransaction = ({ columns }) => {
-    const loacation = useLocation();
-    const path = loacation.pathname.split('/')[1];
-
+    const location = useLocation();
+    const path = location.pathname.split('/')[1];
+    
     const [list, setList] = useState([]);
 
     const { data } = useFetch(`/${path}`);
